@@ -1,0 +1,25 @@
+
+How can I want to swap randomly between Array A and B? 
+
+Any help will be incredibly appreciated. 
+0votes received.
+· flag
+dealga mcardle· 13 days ago 
+There's many ways to do this, some ways will be more convenient depending on the scenario. I find multi-dimensional arrays are a great way to do this.
+
+[30,40,50,60] @=> int A[];  
+[25,35,45,55] @=> int B[];  
+  
+// multidimensional array  
+[A, B] @=> int M[][];  
+  
+for(int i; i<20; i++){  
+  
+    // first or second array, choice  
+    Math.random2(0,1) => int selectionAB;  
+  
+    // then from A or B pick an element  
+    Math.random2(0,3) => int index;  
+  
+    <<< M[selectionAB][index] >>>;  
+}  
